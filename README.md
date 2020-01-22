@@ -26,7 +26,7 @@
     ```sh
     $ g++‬‬ ‫‪-std=c++14‬‬ */*.cpp ‫‪*.cpp‬‬ ‫‪-Wall‬‬ ‫‪-Wextra‬‬ ‫‪-Wshadow‬‬ ‫‪-Wnon-virtual-dtor‬‬ ‫‪-ped antic‬‬ ‫ ‪-o‬‬a.out-pthread
     ````
-##Now you can do 3 different type of command:
+## Now you can do 3 different type of command:
 * Use this command to preparing a text file containing **algorithm comparison** result:
     ```sh
     $ ./a.out testAlgo
@@ -38,7 +38,7 @@
 * The following command will read the client strings and return the opposite string:
     ```sh
     $ ./a.out 5600 part2 //can use another port
-##To use the program after it is started: 
+## To use the program after it is started: 
 * To connect as a client to a server, use the following command:
     ```sh
     $ telnet 127.0.0.1 5600
@@ -53,7 +53,7 @@
       end
       ```
   this matrix is 3X3, start point (0,0) and end (2,2) 
-  the command end strting the solver prosess.
+  the command **end** strting the solver prosess.
   
  ## Features of the program:
  **Within the fold - "TestAlgorithms" Attached are several features for working with the program:**
@@ -88,7 +88,7 @@ And now **automatic** the tester will solve 10 matrix (that in the folder)
 ##### Solver -
 * Realized with the help of successor departments who solve a problem according to a defined exercise
 ##### Search -
-* And more problems that are associated with the search world - for example, we search the matrix Using various algorithms
+* Define a searchable object and know how to solve a search world problem - for example, we search the matrix Using various algorithms
 ##### Algorithms -
 The following algorithms were realized:
 * Breadth First Search
@@ -100,7 +100,8 @@ The following algorithms were realized:
 
 ## Archdiocesan class
 
-![Archdiocesan](https://user-images.githubusercontent.com/59409570/71785674-14cd6500-300b-11ea-8736-43fe69dbe9b1.JPG)
+![dd](https://user-images.githubusercontent.com/59409570/72936042-26cf3780-3d6f-11ea-9649-bd3cb203a95b.jpg)
+
 
 
 ‬
