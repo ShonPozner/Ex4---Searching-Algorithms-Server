@@ -5,7 +5,11 @@
 #ifndef EX4_SEARCH_ALGORITHMS_BESTFIRSTSEARCH_H_
 #define EX4_SEARCH_ALGORITHMS_BESTFIRSTSEARCH_H_
 
+<<<<<<< HEAD
 #include "AbstractSearcher.h"
+=======
+#include "../AbstractSearcher.h"
+>>>>>>> origin
 
 /**
  * BestFirstSearch class.
