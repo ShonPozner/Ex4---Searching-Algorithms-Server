@@ -9,40 +9,57 @@
 
 * **-Searching-Algorithms** Acceptance a matrix from the **client** and returning a solution - **short way** from the start point to the end pointsr.
 * Compare the number of cells evolved using different **search algorithm** implementations
-s.
 
 ## Technologies:
 
 * The project articles in language **C++ ver14**
-* The project is optimized for working with the flight simulator- **FlightGear**
- [link to downoad](http://home.flightgear.org)
 
 ## Launch - how to run the project:
 
-#### Creat the simulator:
-* The simulator must first be **downloaded** (again [link](http://home.flightgear.org)).
-* Than you need to add from **setting command**, request to open a server and Client.
-* copy this **commands** to the setting command:
+#### First compile:
+* **compile** all file with commands:
     ```sh
-     --telnet=socket,in,10,127.0.0.1,5402,tcp
-     --generic=socket,out,10,127.0.0.1,5400,tcp,generic_small
-
-#### Now is the time to run this project:
-* The **compile** command is -
+    $ g++‬‬ ‫‪-std=c++14‬‬ */*.cpp ‫‪*.cpp‬‬ ‫‪-Wall‬‬ ‫‪-Wextra‬‬ ‫‪-Wshadow‬‬ ‫‪-Wnon-virtual-dtor‬‬ ‫‪-ped antic‬‬ ‫ ‪-o‬‬a.out-pthread
+    
+#### Run this project:
+* Using this comint **compile** command is -
     ```sh
     $ g++‬‬ ‫‪-std=c++14‬‬ */*.cpp ‫‪*.cpp‬‬ ‫‪-Wall‬‬ ‫‪-Wextra‬‬ ‫‪-Wshadow‬‬ ‫‪-Wnon-virtual-dtor‬‬ ‫‪-ped antic‬‬ ‫ ‪-o‬‬a.out-pthread
     ````
-* To **run** the code -
+##Now you can do 3 different type of command:
+* Use this command to preparing a text file containing **algorithm comparison** result:
     ```sh
-    $ ./a.out fly.txt  //(you can Choose a different txt file)
+    $ ./a.out testAlgo
     ````
-* Now you see that the program is **waiting** for a cline
-* And this is the right time to **start the simulator**
-* Click on the start and **let the fun begin** 
+* To run a standard - **solves matrix** using the paraller server listener a number of servers:
+    ```sh
+    $ ./a.out 5600 //can use another port
+    ````
+* The following command will read the client strings and return the opposite string:
+    ```sh
+    $ ./a.out 5600 part2 //can use another port
+##To use the program after it is started: 
+* To connect as a client to a server, use the following command:
+    ```sh
+    $ telnet 127.0.0.1 5600
+    
+ * Now send a mtrix like this:
+     ```sh
+    > 1,3,4
+      3,4,8
+      2,1,9
+      0,0
+      2,2
+      end
+      ```
+  this matrix is 3X3, start point (0,0) and end (2,2) 
+  the command end strting the solver prosess.
+ ## General explanation of the program:
+
 
 ## General explanation of the program:
 ### Program order:
-* The project start run the main which first defines **DATA** -
+* Create a **parallel server** that waits for clients and handles them in parallel -
    * Data contains all maps that saved the differnet valyes at tun time
 * Than **LEXER** go on -
    * Lexer read a line by line and save evrey exprision at cell in the arry
