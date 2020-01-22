@@ -1,0 +1,53 @@
+Start the test:
+
+Start BestFirstSearch: 
+Matrix number: 1 size of: 10X10 -  84
+Matrix number: 1 size of: 14X14 -  183
+Matrix number: 1 size of: 18X18 -  298
+Matrix number: 1 size of: 22X22 -  441
+Matrix number: 1 size of: 26X26 -  604
+Matrix number: 1 size of: 30X30 -  809
+Matrix number: 1 size of: 34X34 -  1056
+Matrix number: 1 size of: 38X38 -  1307
+Matrix number: 1 size of: 42X42 -  1611
+Matrix number: 1 size of: 46X46 -  1892
+Matrix number: 1 size of: 50X50 -  2256
+
+Start A star: 
+Matrix number: 1 size of: 10X10 -  84
+Matrix number: 1 size of: 14X14 -  183
+Matrix number: 1 size of: 18X18 -  298
+Matrix number: 1 size of: 22X22 -  441
+Matrix number: 1 size of: 26X26 -  604
+Matrix number: 1 size of: 30X30 -  809
+Matrix number: 1 size of: 34X34 -  1056
+Matrix number: 1 size of: 38X38 -  1307
+Matrix number: 1 size of: 42X42 -  1611
+Matrix number: 1 size of: 46X46 -  1892
+Matrix number: 1 size of: 50X50 -  2256
+
+Start Dfs: 
+Matrix number: 1 size of: 10X10 -  89
+Matrix number: 1 size of: 14X14 -  124
+Matrix number: 1 size of: 18X18 -  137
+Matrix number: 1 size of: 22X22 -  188
+Matrix number: 1 size of: 26X26 -  284
+Matrix number: 1 size of: 30X30 -  187
+Matrix number: 1 size of: 34X34 -  367
+Matrix number: 1 size of: 38X38 -  413
+Matrix number: 1 size of: 42X42 -  568
+Matrix number: 1 size of: 46X46 -  482
+Matrix number: 1 size of: 50X50 -  513
+
+Start Breadth First Search: 
+Matrix number: 1 size of: 10X10 -  88
+Matrix number: 1 size of: 14X14 -  184
+Matrix number: 1 size of: 18X18 -  300
+Matrix number: 1 size of: 22X22 -  443
+Matrix number: 1 size of: 26X26 -  615
+Matrix number: 1 size of: 30X30 -  812
+Matrix number: 1 size of: 34X34 -  1058
+Matrix number: 1 size of: 38X38 -  1313
+Matrix number: 1 size of: 42X42 -  1611
+Matrix number: 1 size of: 46X46 -  1913
+Matrix number: 1 size of: 50X50 -  2264

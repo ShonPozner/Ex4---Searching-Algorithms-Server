@@ -1,0 +1,1 @@
+Right (6) ,Right (10) ,Right (14) ,Down (19) ,Right (22) ,Right (26) ,Right (27) ,Right (32) ,Down (32) ,Down (34) ,Down (36) ,Right (39) ,Down (43) ,Right (46) ,Right (49) ,Down (54) ,Right (55) ,Down (58) ,Down (60) ,Right (66) ,Down (69) ,Down (72) ,Down (74) ,Down (78) ,Right (78) ,Down (86)
