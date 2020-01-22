@@ -130,7 +130,9 @@ void MyClientHandler::handleClient(int clientSocket) {
   {
     // Get solution from cache
     solution = this->_cacheManager->findSolution(nameProblem);
-  } else {
+  } else if(matrixVec[0][0] == -1) {
+    solution = "no solution start with -1"; 
+   } else {
     vector<State<Cell*>*> vecCell = _solver->solve(searchable);
     solution = Utils::buildSolution(vecCell);
     this->_cacheManager->addToCache(nameProblem,solution);
