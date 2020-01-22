@@ -4,7 +4,7 @@
 
 #include "MatrixSearchProblem.h"
 
-MatrixSearchProblem::MatrixSearchProblem(vector<vector<int>>& matrix) {
+MatrixSearchProblem::MatrixSearchProblem(vector<vector<int>>& matrix):Searchable() {
   //Init name from hash code
   string str= "";
   MatrixToStrig(matrix, str);
@@ -14,7 +14,7 @@ MatrixSearchProblem::MatrixSearchProblem(vector<vector<int>>& matrix) {
   int sizeMatrix = matrix.size();
 
   // Init the start find way
-  pair_Cell pairTemp = make_pair(matrix[sizeMatrix - 2][0], matrix[sizeMatrix - 2][1]);
+  pair<int,int> pairTemp = make_pair(matrix[sizeMatrix - 2][0], matrix[sizeMatrix - 2][1]);
   Cell *cellStart = new Cell(pairTemp,matrix[pairTemp.first][pairTemp.second]);
   State<Cell*> *stateStart = new State<Cell*>(cellStart);
   this->setStart(stateStart);
@@ -64,8 +64,8 @@ string MatrixSearchProblem::getString() {
 vector<State<Cell*>*> MatrixSearchProblem::getAllPossibleStates(State<Cell*>* state) {
   vector<State<Cell*>*> result;
   State<Cell*>* temp;
-  int row = state->getState()->getRow();
-  int col = state->getState()->getClo();
+  unsigned int row = state->getState()->getRow();
+  unsigned int col = state->getState()->getClo();
   // we in state that equal to -1 than cant move on
   if (_matrix[row][col] == -1) {
     return result;
@@ -105,7 +105,7 @@ Searchable<Cell*> * MatrixSearchProblem::getClone() {
   vector<vector<int>> copy;
 
   // Copying vector by copy function
-  for(int i = this->_matrix.size() - 1 ; i >= 0; i--) {
+  for(int i = (int)this->_matrix.size() - 1 ; i >= 0; i--) {
     copy.emplace_back(this->_matrix[i]);
   }
   return new MatrixSearchProblem(copy);
@@ -114,9 +114,9 @@ Searchable<Cell*> * MatrixSearchProblem::getClone() {
 
 // creat string from matrix
 void MatrixSearchProblem::MatrixToStrig(vector<vector<int>> &vec, string &str) {
-  for (int i=0; i<vec.size(); i++) {
+  for (unsigned int i=0; i<vec.size(); i++) {
     str +="#";
-    for (int j=0; j<vec[i].size() ;j++) {
+    for (unsigned int j=0; j<vec[i].size() ;j++) {
       str += to_string((int)(vec[i][j] +0.5));
     }
   }

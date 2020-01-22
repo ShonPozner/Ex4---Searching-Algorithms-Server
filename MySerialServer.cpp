@@ -15,8 +15,8 @@ MySerialServer::MySerialServer(): Server() {
 
 // open server to lisning on other thread
 void MySerialServer::open(int port, ClientHandler *clientHandler) {
-  thread _thread(&MySerialServer::start,this,port,clientHandler);
-  _thread.join();
+  thread thread(&MySerialServer::start,this,port,clientHandler);
+  thread.join();
 }
 
 void MySerialServer::start(int port, ClientHandler *clientHandler) {

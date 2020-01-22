@@ -5,7 +5,7 @@
 #ifndef EX4_SERVER_SIDE_SERVER_H_
 #define EX4_SERVER_SIDE_SERVER_H_
 
-#include "../clientHandle/ClientHandler.h"
+#include "ClientHandler.h"
 namespace server_side {
     /**
     * Server interface

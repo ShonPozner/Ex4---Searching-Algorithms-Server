@@ -6,13 +6,12 @@
 #define EX4_SEARCH_SEARCHABLE_MATRIXSEARCHPROBLEM_H_
 
 #include "Searchable.h"
-#include "../../Miscellaneous/Cell.h"
+#include "Cell.h"
 using namespace std;
 
 
 class MatrixSearchProblem: public Searchable<Cell*> {
 
-  typedef typename std::pair<int,int> pair_Cell;
 
 
  private:

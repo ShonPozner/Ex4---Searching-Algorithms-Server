@@ -5,6 +5,7 @@
 #include <fstream>
 #include <iostream>
 #include "FileCacheManger.h"
+using namespace std;
 
 // If problem not found in map return false
 bool FileCacheManger::isExist(string problem) {
@@ -85,7 +86,7 @@ string FileCacheManger::findSolution(string problem) {
           solution = solution + line;
         }
         _cache_items_list.push_front(make_pair(problem,solution));
-        auto first = _cache_items_list.begin();
+        //auto first = _cache_items_list.begin();
         infile.close();
         return solution;
       } else {

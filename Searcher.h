@@ -6,8 +6,8 @@
 #define EX4_SEARCH_SEARCHER_H_
 
 #endif //EX4_SEARCH_SEARCHER_H_
-#include "Searchable/Searchable.h"
-#include "../slover/Solver.h"
+#include "Searchable.h"
+#include "Solver.h"
 /**
  * Searcher interface
  */

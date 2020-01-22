@@ -9,8 +9,8 @@
 #include <queue>
 #include <set>
 //#include "Searcher.h"
-#include "../Miscellaneous/StateCompare.h"
-#include "../Miscellaneous/CellComper.h"
+#include "StateCompare.h"
+#include "CellComper.h"
 
 
 

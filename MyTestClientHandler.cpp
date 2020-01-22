@@ -30,8 +30,8 @@ void MyTestClientHandler::handleClient(int clientSocket) {
         if(item=="\n") {
           continue;
         }
-        int dot = item.find('\n'); {
-          if (dot>=0 && dot<item.length()+1) {
+        unsigned int dot = item.find('\n'); {
+          if (dot <= item.length()) {
             item.erase(dot,1);
           }
         }

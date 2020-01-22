@@ -5,9 +5,9 @@
 #ifndef EX4_SERVER_SIDE_MYTESTCLIENTHANDLER_H_
 #define EX4_SERVER_SIDE_MYTESTCLIENTHANDLER_H_
 
-#include "../slover/Solver.h"
+#include "Solver.h"
 #include "ClientHandler.h"
-#include "../cahche/CacheManager.h"
+#include "CacheManager.h"
 #include <vector>
 
 #define MAXPACKETSIZE 2048
