@@ -54,41 +54,49 @@
       ```
   this matrix is 3X3, start point (0,0) and end (2,2) 
   the command end strting the solver prosess.
- ## General explanation of the program:
+  
+ ## Features of the program:
+ **Within the fold - "TestAlgorithms" Attached are several features for working with the program:**
+* Go into "pythonScript" -
+#### First one - creat matrix:
+* Use this command to start the Script -
+     ```sh
+    $ python2.7 creat_matr.py
+And now we get 11 matrix with name **Matrix_X** (x is a aize of the matrix)
 
+#### Second - creat client:
+* Use this commad to creat a client -
+     ```sh
+    $ python2.7 auto_client.py
+    
+#### Last one - Test parllel server:
+* Into **/pythonScript/test_Parller_tester** wite this command
+    ```sh
+    $ python2.7 parallel_tester.py
+And now **automatic** the tester will solve 10 matrix (that in the folder)
 
 ## General explanation of the program:
-### Program order:
-* Create a **parallel server** that waits for clients and handles them in parallel -
-   * Data contains all maps that saved the differnet valyes at tun time
-* Than **LEXER** go on -
-   * Lexer read a line by line and save evrey exprision at cell in the arry
-* Now **PARSER** time - 
-   * Parser read command after command and execute the commad 
-   
-### Program commands:
-The program recognizes the following commands:
-* **Print** - 
-   * Prints expressions or variables.
-* **Sleep** -
-   * Stops the program activity for several milliseconds as the input you receive
-* **Define a variable**
-   * Define a variable initializes the value of the variable to 0 
-   * Checking the variable's relevance
-* **Open Data Server** -
-   * Open a server 
-   * And waiting for connection to the simulator
-* **Connect Control Client** -
-   * Creat a Client
-   * Sending commands to simulator
-* **While** -
-   * Checks whether the condition is met
-   * If so then execute a command sequence in the loop
-* **If** -
-   * Checks whether the condition is met
-   * If so then execute a command sequence one time
-
-
+#### Program uses different interfaces -
+##### Server -
+* The program create a server of either type or a parallel or serial server
+* Listens to the received port as an argument
+##### Client Handler -
+* Reads the information that is transmitted from the client and from them creat "problem"
+* Use Cache Manager and Solver to solve this problem and back a solution
+##### Cache Manager -
+* Saves the answers to the problems we have solved in the past and knows how to find old issues
+##### Solver -
+* Realized with the help of successor departments who solve a problem according to a defined exercise
+##### Search -
+* And more problems that are associated with the search world - for example, we search the matrix Using various algorithms
+##### Algorithms -
+The following algorithms were realized:
+* Breadth First Search
+* Best First Search
+* Dfs
+* **A star**
+##### String revers
+* Heir of Solution - know how to revers the string he received
 
 ## Archdiocesan class
 
